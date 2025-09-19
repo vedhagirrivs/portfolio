@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Loading</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Loading Page -->
+  <div id="loading">
+    <div class="loader-container">
+      <div class="logo">FD</div>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+      <p>Loading Portfolio...</p>
+    </div>
+  </div>
+
+  <!-- Main Content (hidden until loading finishes) -->
+  <div id="main-content">
+    <h1>Welcome to My Portfolio</h1>
+    <p>This is where your portfolio sections will appear.</p>
+  </div>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Vedhagirri</span></h1>
+      <h2>Frontend Developer</h2>
+      <p>I design and build clean, modern, and responsive websites with passion for UI/UX.</p>
+      <a href="resume 2.pdf" class="btn" target="_blank" download>Download Resume</a>
+      
+
+
+    </div>
+  </section>
+ <!-- About Me Section -->
+  <section class="about" id="about">
+    <div class="about-container">
+      <div class="profile-pic">
+        <img src="vedhagirri.png" alt="Profile Picture">
+      </div>
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm <strong>Vedhagirri</strong>, a passionate Frontend Developer.  
+          I enjoy creating clean, responsive, and user-friendly websites.  
+          My focus is on writing efficient code and delivering engaging web experiences.
+        </p>
+        <h3>Skills I Know</h3>
+        <ul class="skills">
+          <li>HTML5 & CSS3</li>
+          <li>JavaScript (ES6+)</li>
+          <li>React.js</li>
+          <li>Bootstrap / Tailwind CSS</li>
+          <li>Git & GitHub</li>
+          <li>Responsive Web Design</li>
+          <li>python </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+    <!-- Skills Section -->
+  <section class="skills-section" id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <!-- HTML -->
+      <div class="skill-card" onclick="showIntro('html')">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML Logo">
+        <p>HTML5</p>
+      </div>
+
+      <!-- CSS -->
+      <div class="skill-card" onclick="showIntro('css')">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS Logo">
+        <p>CSS3</p>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="skill-card" onclick="showIntro('js')">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS Logo">
+        <p>JavaScript</p>
+      </div>
+
+      <!-- React -->
+      <div class="skill-card" onclick="showIntro('react')">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Logo">
+        <p>React</p>
+      </div>
+
+      <!-- Python -->
+      <div class="skill-card" onclick="showIntro('python')">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo">
+        <p>Python</p>
+      </div>
+    </div>
+
+    <!-- Skill Intro Box -->
+    <div id="skill-intro" class="skill-intro">
+      <p>Click on a skill logo to see details here.</p>
+    </div>
+  </section>
+   <!-- Projects Section -->
+  <section class="projects-section" id="projects">
+    <h2>My Projects</h2>
+    
+    <div class="projects-container">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="project 1.png" alt="Project 1">
+        <div class="project-info">
+          <h3>Portfolio Website</h3>
+          <p>Created a personal portfolio website showcasing my skills and projects using HTML, CSS, and JS.</p>
+          <p><strong>Start Date:</strong> Jan 2025 | <strong>End Date:</strong> Feb 2025</p>
+          <div class="project-buttons">
+            <a href="https://vedhagirrivs.github.io/portfolio/" target="_blank" class="btn-site">View Site</a>
+            <a href="https://github.com/vedhagirrivs/portfolio" target="_blank" class="btn-code">View Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="agrimart.png" alt="Project 2">
+        <div class="project-info">
+          <h3>e-commerce agricultural website </h3>
+          <p>Creative and passionate web developer skilled in building responsive, user-friendly websites and full-stack applications with HTML, CSS, JavaScript, and PHP.</p>
+          <p><strong>Start Date:</strong> 24th  Mar 2024 | <strong>End Date:April 2024</strong>  4th Apr 2025</p>
+          <div class="project-buttons">
+            <a href="https://vedhagirrivs.github.io/agrimart/" target="_blank" class="btn-site">View Site</a>
+            <a href="https://github.com/vedhagirrivs/agrimart.git" target="_blank" class="btn-code">View Code</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+   <!-- Education Section -->
+  <section class="education-section" id="education">
+    <h2>Education</h2>
+    <div class="education-container">
+      <!-- Education Item 1 -->
+      <div class="education-item">
+        <h3>Bachelor of  Iformation Technology </h3>
+        <p> Saradha Gangadharan College, 2022 - 2025</p>
+        <p>CGPA: 5.7/10</p>
+      </div>
+      <!-- Education Item 2 -->
+      <div class="education-item">
+        <h3>Higher Secondary Certificate (HSC)</h3>
+        <p>Sri Sankar's Vidyalaya Higher Secondary School, 2021 - 2022</p>
+        <p>Percentage: 46.50%</p>
+      </div>
+      <!-- Education Item 3 -->
+      <div class="education-item">
+        <h3>Secondary School  leaving Certificate (SSlC)</h3>
+        <p>Shree Azhagappa English High  School, 2019 - 2020</p>
+        <p>Percentage: 68%</p>
+      </div>
+    </div>
+  </section>
+<!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out for collaborations or freelance work.</p>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+      <p id="form-message"></p>
+    </form>
+  </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2025 Vedhagirri. All Rights Reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+        </a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+        </a>
+        <a href="mailto:yourmail@example.com" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
